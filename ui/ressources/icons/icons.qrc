@@ -1,0 +1,33 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>add-user.png</file>
+    <file>bg-55.jpg</file>
+    <file>bg-login.jpg</file>
+    <file>booking.png</file>
+    <file>booking2.png</file>
+    <file>calendar.png</file>
+    <file>coaches.png</file>
+    <file>customers.png</file>
+    <file>edit_1.webp</file>
+    <file>edit_2.png</file>
+    <file>edit_2.webp</file>
+    <file>file.png</file>
+    <file>halle_add.png</file>
+    <file>halles.png</file>
+    <file>logo onpadel color.jpg</file>
+    <file>logo onpadel negro.png</file>
+    <file>logo_small.jpg</file>
+    <file>logo_smalltrans.webp</file>
+    <file>logo-onpadel.png.webp</file>
+    <file>logout.png</file>
+    <file>logout2.png</file>
+    <file>online-booking.png</file>
+    <file>padel.png</file>
+    <file>person.png</file>
+    <file>plus.png</file>
+    <file>recycle-bin.png</file>
+    <file>save.png</file>
+    <file>search.png</file>
+    <file>technology.png</file>
+  </qresource>
+</RCC>

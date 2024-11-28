@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>690</width>
+    <height>610</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>607</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Home</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>ressources/icons/logo_smalltrans.png</normaloff>ressources/icons/logo_smalltrans.png</iconset>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>-3</x>
+      <y>0</y>
+      <width>741</width>
+      <height>671</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="btnAddCustomer">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>280</y>
+       <width>101</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Füge einen Kunde ein&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background-color: rgba(255, 255, 255, 0);
+border: 2px solid rgba(255,255,255,100);
+border-radius: 5px;
+}
+
+QPushButton:hover{
+border: 1px solid rgba(255,255,255,100);
+background-color: rgb(252, 164, 76);
+background-color: rgb(249, 4, 0);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>ressources/icons/add-user.png</normaloff>ressources/icons/add-user.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>80</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnAddCoach">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>280</y>
+       <width>101</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Registriere ein Trainer&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background-color: rgba(255, 255, 255,0);
+border: 2px solid rgba(255,255,255,100);
+border-radius: 5px;
+}
+
+QPushButton:hover{
+	border: 1px solid rgba(255,255,255,100);
+background-color: rgb(249, 4, 0);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>ressources/icons/coaches.png</normaloff>ressources/icons/coaches.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>80</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnAddHalle">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>280</y>
+       <width>101</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Registriere eine Halle&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background-color: rgba(255, 255, 255, 0);
+border: 2px solid rgba(255,255,255,100);
+border-radius: 5px;
+}
+
+QPushButton:hover{
+	border: 1px solid rgba(255,255,255,100);
+	background-color: rgb(249, 4, 0);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>ressources/icons/halle_add.png</normaloff>ressources/icons/halle_add.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>80</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="txtTitleHalle">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>501</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto</family>
+       <pointsize>30</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
+     <property name="text">
+      <string>Willkommen zu OnPadel!</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::RichText</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="logoutIcon">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>480</y>
+       <width>91</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Beenden&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#logoutIcon{
+	border-radius: 8px;
+	background-color: rgba(0, 0, 0, 0);
+	border: 2px solid rgba(255,255,255,100);
+}
+
+QPushButton#logoutIcon:hover{
+	border: 2px solid rgba(255,255,255,100);
+	background-color: rgb(249, 4, 0);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>ressources/icons/logout.png</normaloff>ressources/icons/logout.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>55</width>
+       <height>55</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnAddTermin">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>140</y>
+       <width>101</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Buche einen Termin&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background-color: rgba(255, 255, 255, 0);
+border: 2px solid rgba(255,255,255,100);
+border-radius: 5px;
+}
+
+QPushButton:hover{
+border: 1px solid rgba(255,255,255,100);
+background-color: rgb(249, 4, 0);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>ressources/icons/calendar.png</normaloff>ressources/icons/calendar.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>80</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnReports">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>140</y>
+       <width>101</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Reports&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background-color: rgba(255, 255, 255, 0);
+border: 2px solid rgba(255,255,255,100);
+border-radius: 5px;
+}
+QPushButton:hover{
+	border: 1px solid rgba(255,255,255,100);
+	background-color: rgb(249, 4, 0);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>ressources/icons/reporte-de-negocios.png</normaloff>ressources/icons/reporte-de-negocios.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>80</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnEditProfile">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>140</y>
+       <width>101</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::PreventContextMenu</enum>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Datenverwaltung&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background-color: rgba(255, 255, 255, 0);
+border: 2px solid rgba(255,255,255,100);
+border-radius: 5px;
+}
+QPushButton:hover{
+	border: 1px solid rgba(255,255,255,100);
+	background-color: rgb(249, 4, 0);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>ressources/icons/edit_2.png</normaloff>ressources/icons/edit_2.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>80</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="bg">
+     <property name="geometry">
+      <rect>
+       <x>-10</x>
+       <y>-80</y>
+       <width>771</width>
+       <height>731</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>ressources/images/bg-main.jpg</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <zorder>bg</zorder>
+    <zorder>btnAddCustomer</zorder>
+    <zorder>btnAddCoach</zorder>
+    <zorder>btnAddHalle</zorder>
+    <zorder>txtTitleHalle</zorder>
+    <zorder>logoutIcon</zorder>
+    <zorder>btnAddTermin</zorder>
+    <zorder>btnReports</zorder>
+    <zorder>btnEditProfile</zorder>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>690</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <widget class="QMenu" name="menuAdd_Kunde">
+     <property name="title">
+      <string>Registrieren</string>
+     </property>
+     <addaction name="btnCustomerRegister"/>
+     <addaction name="btnCoachAction"/>
+     <addaction name="btnHalleAction"/>
+    </widget>
+    <widget class="QMenu" name="menuTrainer">
+     <property name="title">
+      <string>Bearbeiten</string>
+     </property>
+     <addaction name="actionProfileBearbeiten"/>
+    </widget>
+    <addaction name="menuAdd_Kunde"/>
+    <addaction name="menuTrainer"/>
+   </widget>
+   <widget class="QMenu" name="menuBerichte">
+    <property name="title">
+     <string>Berichte</string>
+    </property>
+    <addaction name="actionBerichte"/>
+   </widget>
+   <widget class="QMenu" name="menuTermine">
+    <property name="title">
+     <string>Termine</string>
+    </property>
+    <addaction name="btnTerminAction"/>
+   </widget>
+   <widget class="QMenu" name="menuHilfe">
+    <property name="title">
+     <string>Hilfe</string>
+    </property>
+    <addaction name="actionHandbuch"/>
+   </widget>
+   <addaction name="menuMenu"/>
+   <addaction name="menuTermine"/>
+   <addaction name="menuBerichte"/>
+   <addaction name="menuHilfe"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="btnCustomerRegister">
+   <property name="icon">
+    <iconset>
+     <normaloff>ressources/icons/add-user.png</normaloff>ressources/icons/add-user.png</iconset>
+   </property>
+   <property name="text">
+    <string>Kunde</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+K</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::WindowShortcut</enum>
+   </property>
+  </action>
+  <action name="btnCoachAction">
+   <property name="icon">
+    <iconset>
+     <normaloff>ressources/icons/person.png</normaloff>ressources/icons/person.png</iconset>
+   </property>
+   <property name="text">
+    <string>Trainer</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::WindowShortcut</enum>
+   </property>
+  </action>
+  <action name="btnHalleAction">
+   <property name="icon">
+    <iconset>
+     <normaloff>ressources/icons/halle_add.png</normaloff>ressources/icons/halle_add.png</iconset>
+   </property>
+   <property name="text">
+    <string>Halle</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+  <action name="actionProfileBearbeiten">
+   <property name="icon">
+    <iconset>
+     <normaloff>ressources/icons/file.png</normaloff>ressources/icons/file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Profile Bearbeiten</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="btnHalleAction1">
+   <property name="text">
+    <string>Registrieren</string>
+   </property>
+  </action>
+  <action name="btnTerminAction">
+   <property name="icon">
+    <iconset>
+     <normaloff>ressources/icons/booking.png</normaloff>ressources/icons/booking.png</iconset>
+   </property>
+   <property name="text">
+    <string>Neuer Termin</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
+   </property>
+  </action>
+  <action name="actionBerichte">
+   <property name="icon">
+    <iconset>
+     <normaloff>ressources/icons/reporte.png</normaloff>ressources/icons/reporte.png</iconset>
+   </property>
+   <property name="text">
+    <string>Berichte Erstellen</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionProfileBearbeiten1">
+   <property name="text">
+    <string>Profile Bearbeiten</string>
+   </property>
+  </action>
+  <action name="actionHandbuch">
+   <property name="text">
+    <string>Benutzer Handbuch</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
